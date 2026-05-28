@@ -6,6 +6,16 @@ The main idea of this project is to help users manage daily tasks, reminders, no
 
 This project is mainly built for learning, practice, and showing my frontend development skills.
 
+## Live Website
+
+You can view the live TaskFlow Website here:
+
+https://taskflow-personal-tracking-system.netlify.app/
+
+## GitHub Repository
+
+https://github.com/araWINd-AR/Task-flow-Website
+
 ## About This Project
 
 TaskFlow is a web-based productivity system. It has login and register pages, and after logging in, users can access the main dashboard and different productivity sections.
@@ -185,6 +195,7 @@ This is a simple project assistant. It is not a full AI chatbot, but it makes th
 - CSS
 - React Router
 - LocalStorage
+- Netlify
 
 ## Project Structure
 
@@ -253,11 +264,11 @@ To create a production build:
 
 ## Deployment
 
-This project can be deployed on platforms like:
+This project is deployed on Netlify.
 
-- Netlify
-- Vercel
-- GitHub Pages
+Live Website:
+
+https://taskflow-personal-tracking-system.netlify.app/
 
 For Netlify, the common settings are:
 
@@ -296,6 +307,7 @@ While building this project, I learned:
 - How to design dashboard cards and page layouts
 - How to manage tasks, reminders, notes, goals, habits, and work records
 - How to connect multiple productivity features inside one web app
+- How to deploy a React project on Netlify
 
 ## Future Improvements
 
@@ -317,10 +329,12 @@ In the future, I want to improve this project by adding:
 
 TaskFlow Website is a personal productivity web app made to manage daily work in one place.
 
-This project helped me practice React, routing, localStorage, state management, UI design, and frontend project structure. It is not a production-level app yet, but it includes many useful features like tasks, reminders, notes, work hours, goals, habits, focus timer, analytics, and chatbot support.
+This project helped me practice React, routing, localStorage, state management, UI design, frontend project structure, and deployment using Netlify. It is not a production-level app yet, but it includes many useful features like tasks, reminders, notes, work hours, goals, habits, focus timer, analytics, and chatbot support.
 
 This project is mainly built for learning, practice, and showing my frontend development skills.
 
-## Repository Link
+## Project Links
 
-https://github.com/araWINd-AR/Task-flow-Website
+Live Website: https://taskflow-personal-tracking-system.netlify.app/
+
+GitHub Repository: https://github.com/araWINd-AR/Task-flow-Website
