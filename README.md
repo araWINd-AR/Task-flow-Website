@@ -1,16 +1,16 @@
-# TaskFlow iOS App
+# TaskFlow Website
 
-TaskFlow is a personal productivity iOS app that I made using SwiftUI.
+TaskFlow is a personal productivity website that I built using React.
 
-The main idea of this app is to keep daily tasks, reminders, notes, work hours, goals, habits, focus timer, analytics, vault, and settings in one place. I created this project because many people use different apps for different daily needs, so I wanted to build one simple app where everything can be managed together.
+The main idea of this project is to help users manage daily tasks, reminders, notes, work hours, goals, habits, focus sessions, and analytics in one place. I created this project because many people use separate apps for different things, so I wanted to make one simple website where daily productivity can be managed easily.
 
-This project is mainly made for learning, practice, and showing my iOS development skills.
+This project is mainly built for learning, practice, and showing my frontend development skills.
 
 ## About This Project
 
-TaskFlow is a SwiftUI-based iPhone app. It has a login screen first, and after login the user can access the main app with different tabs.
+TaskFlow is a web-based productivity system. It has login and register pages, and after logging in, users can access the main dashboard and different productivity sections.
 
-The app includes:
+The website includes:
 
 - Dashboard
 - Calendar
@@ -20,29 +20,28 @@ The app includes:
 - Habits
 - Focus Timer
 - Analytics
-- Vault
-- Settings
+- Chatbot Widget
 
-Most of the app data is stored locally on the device. Some data is saved as local JSON files, some settings are saved using UserDefaults, and vault data is saved using Keychain.
+The project stores data in the browser using localStorage. So the saved data stays in the same browser even after refreshing the page.
 
 ## Features
 
-## Login and Signup
+## Login and Register
 
-The app has a basic login and signup flow.
+The website has a basic login and register system.
 
 Users can:
 
+- Create an account
 - Login with email and password
-- Create a new account
-- Use a demo forgot password screen
-- Use Face ID or Touch ID demo login if the device supports it
+- Access protected pages after login
+- Logout from the website
 
 This login system is only for demo purpose. It is not a real production authentication system.
 
 ## Dashboard
 
-The Dashboard gives a quick view of the user's day.
+The Dashboard gives a quick summary of the user's day.
 
 It shows:
 
@@ -50,10 +49,10 @@ It shows:
 - Today's reminders
 - Work hours summary
 - Earnings summary
-- Quick add task option
-- Quick add reminder option
+- Quick task creation
+- Quick reminder creation
 
-The Dashboard is useful because the user can quickly see what needs to be done today.
+This helps users quickly understand what they need to complete for the day.
 
 ## Calendar
 
@@ -61,61 +60,63 @@ The Calendar page helps users manage reminders by date.
 
 Users can:
 
-- View a monthly calendar
 - Select a date
 - Add reminders
-- View pending reminders
-- View completed reminders
-- Mark reminders as done
+- View reminders for selected dates
+- Mark reminders as completed
 - Delete reminders
+- Move between months
 
-This is useful for events, birthdays, meetings, assignments, and personal reminders.
+This is useful for personal events, meetings, deadlines, birthdays, and daily reminders.
 
 ## Notes
 
-The Notes page is used to create and manage notes.
+The Notes page is used to create and manage personal notes.
 
 Users can:
 
-- Create notes
-- Search notes
-- View notes
+- Add notes
+- Edit notes
 - Delete notes
-- See notes with different colors
+- Search notes
+- Mark notes as favorite
+- Protect notes with password
+- Import notes
+- Export notes as JSON
 
-This feature is useful for saving ideas, study points, personal notes, or quick information.
+This feature is useful for saving ideas, study points, personal information, and quick notes.
 
 ## Work Hours
 
-The Work Hours page helps track work sessions and expenses.
+The Work Hours page helps users track work sessions and earnings.
 
 Users can:
 
 - Add work date
 - Add start time and end time
 - Add hourly pay
-- Calculate total hours
+- Calculate total work hours
 - Calculate earnings
 - Add expenses
 - Search work records
-- Filter monthly or yearly records
-- See total hours, total earnings, sessions, average daily hours, and expenses
+- View monthly and yearly summaries
 
-This is useful for part-time work, hourly jobs, freelance work, and personal income tracking.
+This is useful for part-time jobs, hourly work, freelance work, and personal income tracking.
 
 ## Goals
 
-The Goals page helps users set and track personal goals.
+The Goals page helps users create and track personal goals.
 
 Users can:
 
-- Add a goal
-- Select a target date
-- Set progress using a slider
-- View goal progress
-- Delete goals
+- Add goal title
+- Add goal description
+- Set target value
+- Choose goal category
+- Set target date
+- Track goal progress
 
-This is useful for study goals, fitness goals, finance goals, and personal targets.
+This is useful for study goals, fitness goals, finance goals, productivity goals, and personal targets.
 
 ## Habits
 
@@ -124,11 +125,11 @@ The Habits page helps users build daily habits.
 Users can:
 
 - Create habits
-- Mark habits as done
-- Track streak count
+- Mark habits as completed
+- Track habit streaks
 - Delete habits
 
-The habit feature helps users stay consistent.
+The habit streak feature helps users stay consistent.
 
 ## Focus Timer
 
@@ -136,187 +137,190 @@ The Focus page has a Pomodoro-style focus timer.
 
 It includes:
 
-- 25-minute timer
-- Start button
-- Pause button
-- Reset button
+- Focus timer
+- Break timer
+- Start option
+- Pause option
+- Reset option
+- Focus session count
 
-This is useful for studying, working, or staying focused without distractions.
+This is useful for studying, working, and staying focused without distractions.
 
 ## Analytics
 
-The Analytics page gives a simple summary of the user's app data.
+The Analytics page gives a simple summary of productivity data.
 
-It shows:
+It shows information like:
 
 - Total tasks
 - Completed tasks
 - Total notes
-- Work hour entries
-- Goal count
-- Average goal progress
-- Habit count
-- Best habit streak
+- Work sessions
+- Goals
+- Habit progress
+- Productivity overview
 
-This helps the user understand their productivity progress.
+This helps users understand their progress.
 
-## Vault
+## Chatbot Widget
 
-The Vault page is used to store login details safely.
+The website also has a small chatbot assistant.
 
-Users can:
+The chatbot can help with simple actions like:
 
-- Unlock the vault using device authentication
-- Add login details
-- Save title, username, and password
-- Copy username or password
-- Delete vault items
+- Opening pages
+- Adding reminders
+- Adding notes
+- Adding todos
+- Showing help
+- Giving productivity suggestions
 
-Vault data is saved using Keychain, which is better than saving passwords in normal local storage.
-
-## Settings
-
-The Settings page includes basic app preferences and account options.
-
-Users can:
-
-- View account information
-- Enable or disable biometric login option
-- See dark mode option
-- Logout from the app
-
-Note: The dark mode option currently needs improvement because the app is mostly designed with a dark UI.
+This is a simple project assistant. It is not a full AI chatbot, but it makes the website more interactive.
 
 ## Technologies Used
 
-- Swift
-- SwiftUI
-- Xcode
-- Combine
-- UserDefaults
-- FileManager
-- Codable
-- LocalAuthentication
-- Security / Keychain
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+- LocalStorage
 
 ## Project Structure
 
 This is the basic structure of the project:
 
-    Task-flow-App-for-Iphones
-    ├── README.md
-    ├── Task flow code
-    │   ├── Task_FlowApp.swift
-    │   ├── RootView.swift
-    │   ├── MainTabView.swift
-    │   ├── AuthView.swift
-    │   ├── AuthStore.swift
-    │   ├── AppStore.swift
-    │   ├── Models.swift
-    │   ├── Persistence.swift
-    │   ├── DashboardView.swift
-    │   ├── CalendarView.swift
-    │   ├── NotesView.swift
-    │   ├── WorkHoursView.swift
-    │   ├── GoalsView.swift
-    │   ├── HabitsView.swift
-    │   ├── FocusView.swift
-    │   ├── AnalyticsView.swift
-    │   ├── VaultView.swift
-    │   ├── KeychainVault.swift
-    │   ├── LocalAuthGate.swift
-    │   ├── SettingsView.swift
-    │   └── ContentView.swift
-    │
-    └── Project documents and wireframes
+    Task-flow-Website
+    ├── index.html
+    ├── package.json
+    └── src
+        ├── main.jsx
+        ├── App.jsx
+        ├── Layout.jsx
+        ├── styles.css
+        ├── app
+        │   ├── AuthContext.jsx
+        │   ├── RequireAuth.jsx
+        │   ├── RemindersContext.jsx
+        │   ├── NotesContext.jsx
+        │   ├── HabitsContext.jsx
+        │   └── GoalsContext.jsx
+        ├── pages
+        │   ├── Home.jsx
+        │   ├── Calendar.jsx
+        │   ├── Notes.jsx
+        │   ├── WorkHours.jsx
+        │   ├── Goals.jsx
+        │   ├── Habits.jsx
+        │   ├── Focus.jsx
+        │   ├── Analytics.jsx
+        │   ├── Login.jsx
+        │   └── Register.jsx
+        └── components
+            ├── Sidebar.jsx
+            ├── TopBar.jsx
+            └── ChatBotWidget.jsx
 
 ## How to Run This Project
 
 First clone the repository:
 
-    git clone https://github.com/araWINd-AR/Task-flow-App-for-Iphones.git
+    git clone https://github.com/araWINd-AR/Task-flow-Website.git
 
-Open the project in Xcode.
+Go inside the project folder:
 
-If the Xcode project file is already available, open it directly.
+    cd Task-flow-Website
 
-If only Swift files are available, create a new iOS SwiftUI project in Xcode and add the Swift files from the `Task flow code` folder.
+Install the required packages:
 
-Then run the app using an iPhone simulator or a real iPhone.
+    npm install
 
-## Data Storage
+Run the project:
 
-This app stores data locally.
+    npm run dev
 
-The app uses:
+After running the command, open the localhost link shown in the terminal.
 
-- JSON files for tasks, reminders, notes, goals, habits, and some app data
-- UserDefaults for demo login/session/settings
-- Keychain for vault items
-- LocalAuthentication for Face ID, Touch ID, or passcode-based unlock
+Usually it will be:
+
+    http://localhost:5173
+
+## Build Command
+
+To create a production build:
+
+    npm run build
+
+## Deployment
+
+This project can be deployed on platforms like:
+
+- Netlify
+- Vercel
+- GitHub Pages
+
+For Netlify, the common settings are:
+
+    Build command: npm run build
+    Publish directory: dist
+
+## How Data Is Stored
+
+This project stores data in browser localStorage.
+
+That means:
+
+- Data stays saved in the same browser
+- Data is not stored in a real database
+- If browser storage is cleared, the data will be removed
+- This is good for demo and learning purpose
 
 ## Important Note
 
-This app is not using a real backend database yet.
+The login system in this project is only for demo purpose.
 
-The login and signup system is only for demo purpose. It should not be treated as secure production authentication.
+User data is saved in browser localStorage, so this should not be treated as a secure production authentication system.
 
-For a real app, I would improve it by adding Firebase Auth, Firestore, Supabase, or another backend system.
-
-## Current Limitations
-
-Some parts of the app are still demo-level.
-
-Current limitations:
-
-- Login system is local demo authentication
-- Dark mode setting needs improvement
-- Work Hours data should be connected better with Dashboard and Analytics
-- Some screens are more polished than others
-- Real notification support can be improved
-- Cloud database is not added yet
-- The app should include a proper Xcode project file if it is missing
+For a real project, I would improve it by adding Firebase, Supabase, MongoDB, PostgreSQL, or another backend database.
 
 ## What I Learned
 
-While working on this project, I learned:
+While building this project, I learned:
 
-- How to build an iOS app using SwiftUI
-- How to use TabView for multiple app sections
-- How to manage app state using ObservableObject
-- How to pass data using EnvironmentObject
-- How to save local data using Codable and JSON files
-- How to use UserDefaults for simple local settings
-- How to use Keychain for sensitive vault data
-- How to use LocalAuthentication for Face ID and Touch ID
-- How to design multiple productivity features in one app
-- How to structure a larger SwiftUI project
+- How to create a React project using Vite
+- How to build multiple pages using React Router
+- How to create login and protected routes
+- How to use Context API for shared data
+- How to store and read data using localStorage
+- How to build reusable components
+- How to design dashboard cards and page layouts
+- How to manage tasks, reminders, notes, goals, habits, and work records
+- How to connect multiple productivity features inside one web app
 
 ## Future Improvements
 
 In the future, I want to improve this project by adding:
 
-- Firebase Authentication
-- Firestore database
-- Real forgot password flow
-- Local notifications for reminders
-- Better dark and light mode support
-- Better analytics charts
+- Real authentication system
+- Firebase or Supabase database
+- Forgot password option
 - Cloud backup
-- Profile page
-- Better habit streak logic
-- Better work hours connection with dashboard
-- App icon and launch screen
-- More polished UI for all screens
+- Better mobile responsiveness
+- Reminder notifications
+- Better analytics charts
+- Profile settings page
+- Improved chatbot support
+- Dark mode and light mode improvements
+- Better UI polish across all pages
 
 ## Conclusion
 
-TaskFlow is a productivity iOS app made to manage daily work in one place.
+TaskFlow Website is a personal productivity web app made to manage daily work in one place.
 
-This project helped me practice SwiftUI, local storage, authentication flow, Keychain storage, and app navigation. It still needs improvements before it can be called a production app, but it already shows many useful features like tasks, reminders, notes, work hours, goals, habits, focus timer, analytics, vault, and settings.
+This project helped me practice React, routing, localStorage, state management, UI design, and frontend project structure. It is not a production-level app yet, but it includes many useful features like tasks, reminders, notes, work hours, goals, habits, focus timer, analytics, and chatbot support.
 
-This project is mainly built for learning, practice, and showing my iOS app development skills.
+This project is mainly built for learning, practice, and showing my frontend development skills.
 
 ## Repository Link
 
-https://github.com/araWINd-AR/Task-flow-App-for-Iphones
+https://github.com/araWINd-AR/Task-flow-Website
